@@ -14,7 +14,7 @@ var rest = require('express-rest-ember');
 rest.setup({mongoose: mongoose, resources: '/path/to/models' });
 
 //
-// Register all REST-ful routes
+// Register the routes for "myResource"
 //
 app.use('/api/myResource', rest.routes.myResource); // Your resource will now be avilable at http://host/api/myResource
 
