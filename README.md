@@ -11,6 +11,9 @@ mongoose.connect(...)
 
 var rest = require('express-rest-ember');
 
+//
+// Inject mongoose and specify the paths to the resources
+//
 rest.setup({mongoose: mongoose, resources: '/path/to/models' });
 
 //
